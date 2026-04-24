@@ -1,0 +1,28 @@
+{
+  "serviceName": "core-engine",
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "version": "1.2.3",
+  "dependencies": {
+    "database": {
+      "status": "healthy",
+      "responseTime": 0.012
+    },
+    "messageQueue": {
+      "status": "degraded",
+      "details": "High latency detected"
+    },
+    "externalAPI": {
+      "status": "unavailable",
+      "error": "Connection refused"
+    }
+  },
+  "metrics": {
+    "cpuUsage": 0.65,
+    "memoryUsage": 0.78,
+    "requestsPerSecond": 125.5
+  },
+  "environment": "production",
+  "buildId": "abcdef123456",
+  "commitHash": "fedcba987654"
+}
